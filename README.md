@@ -2,13 +2,15 @@
 [![OpenCombine](https://circleci.com/gh/OpenCombine/OpenCombine.svg?style=svg)](https://circleci.com/gh/OpenCombine/OpenCombine)
 [![codecov](https://codecov.io/gh/OpenCombine/OpenCombine/branch/master/graph/badge.svg)](https://codecov.io/gh/OpenCombine/OpenCombine)
 ![Language](https://img.shields.io/badge/Swift-5.0-orange.svg)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20iOS%20%7C%20watchOS%20%7C%20tvOS%20%7C%20Wasm-lightgrey.svg)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20iOS%20%7C%20watchOS%20%7C%20tvOS-lightgrey.svg)
 ![Cocoapods](https://img.shields.io/cocoapods/v/OpenCombine?color=blue)
 [<img src="https://img.shields.io/badge/slack-OpenCombine-yellow.svg?logo=slack">](https://join.slack.com/t/opencombine/shared_invite/enQtNzE2MjE5NzkxODI0LTYxMjkzNDUxZWViZWI1Njc2YjBhODgxNjRjOTdkZTcxOGU2ZjJjZjYxMGI3NWZkN2RkNGFmZTUzNmU3MGE2ZWM)
 
 Open-source implementation of Apple's [Combine](https://developer.apple.com/documentation/combine) framework for processing values over time.
 
-The main goal of this project is to provide a compatible, reliable and efficient implementation which can be used on Apple's operating systems before macOS 10.15 and iOS 13, as well as Linux and WebAssembly.
+The main goal of this project is to provide a compatible, reliable and efficient implementation which can be used on Apple's operating systems before macOS 10.15 and iOS 13, as well as Linux and Windows.
+
+The project is in early development.
 
 ### Installation
 `OpenCombine` contains three public targets: `OpenCombine`, `OpenCombineFoundation` and `OpenCombineDispatch` (the fourth one, `COpenCombineHelpers`, is considered private. Don't import it in your projects).
@@ -17,11 +19,11 @@ OpenCombine itself does not have any dependencies. Not even Foundation or Dispat
 
 ##### Swift Package Manager
 ###### Swift Package
-To add `OpenCombine` to your [SwiftPM](https://swift.org/package-manager/) package, add the `OpenCombine` package to the list of package and target dependencies in your `Package.swift` file. `OpenCombineDispatch` and `OpenCombineFoundation` products are currently not supported on WebAssembly. If your project targets WebAssembly exclusively, you should omit them from the list of your dependencies. If it targets multiple platforms including WebAssembly, depend on them only on non-WebAssembly platforms with [conditional target dependencies](https://github.com/apple/swift-evolution/blob/main/proposals/0273-swiftpm-conditional-target-dependencies.md).
+To add `OpenCombine` to your [SPM](https://swift.org/package-manager/) package, add the `OpenCombine` package to the list of package and target dependencies in your `Package.swift` file.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/OpenCombine/OpenCombine.git", from: "0.11.0")
+    .package(url: "https://github.com/OpenCombine/OpenCombine.git", from: "0.10.0")
 ],
 targets: [
     .target(name: "MyAwesomePackage", dependencies: ["OpenCombine",
@@ -31,7 +33,7 @@ targets: [
 ```
 
 ###### Xcode
-`OpenCombine` can also be added as a SwiftPM dependency directly in your Xcode project *(requires Xcode 11 upwards)*.
+`OpenCombine` can also be added as a SPM dependency directly in your Xcode project *(requires Xcode 11 upwards)*.
 
 To do so, open Xcode, use **File** → **Swift Packages** → **Add Package Dependency…**, enter the [repository URL](https://github.com/OpenCombine/OpenCombine.git), choose the latest available version, and activate the checkboxes:
 
@@ -44,9 +46,16 @@ To do so, open Xcode, use **File** → **Swift Packages** → **Add Package Depe
 To add `OpenCombine` to a project using [CocoaPods](https://cocoapods.org/), add `OpenCombine` and `OpenCombineDispatch` to the list of target dependencies in your `Podfile`. 
 
 ```ruby
-pod 'OpenCombine', '~> 0.11.0'
-pod 'OpenCombineDispatch', '~> 0.11.0'
-pod 'OpenCombineFoundation', '~> 0.11.0'
+pod 'OpenCombine', '~> 0.10'
+pod 'OpenCombineDispatch', '~> 0.10'
+pod 'OpenCombineFoundation', '~> 0.10'
+```
+
+##### Carthage
+For [Carthage](https://github.com/Carthage/Carthage), add the following to your `Cartfile`:
+
+```ogdl
+github "OpenCombine/OpenCombine" ~> 0.10
 ```
 
 ### Contributing
@@ -55,7 +64,7 @@ In order to work on this project you will need Xcode 10.2 and Swift 5.0 or later
 
 Please refer to the [issue #1](https://github.com/OpenCombine/OpenCombine/issues/1) for the list of operators that remain unimplemented, as well as the [RemainingCombineInterface.swift](https://github.com/OpenCombine/OpenCombine/blob/master/RemainingCombineInterface.swift) file. The latter contains the generated interface of Apple's Combine from the latest Xcode 11 version. When the functionality is implemented in OpenCombine, it should be removed from the RemainingCombineInterface.swift file.
 
-You can refer to [this repo](https://github.com/OpenCombine/combine-interfaces) to observe Apple's Combine API and documentation changes between different Xcode (beta) versions.
+You can refer to [this gist](https://gist.github.com/broadwaylamb/c2c8550d76b3ff851c4c1dbf0a872e26) to observe Apple's Combine API changes between different Xcode (beta) versions, or to [this gist](https://gist.github.com/broadwaylamb/82dc2ce4ffbe06527c2c352b8f10910f) to see the relevant contents of the .swiftinterface file for Combine.
 
 You can run compatibility tests against Apple's Combine. In order to do that you will need either macOS 10.14 with iOS 13 simulator installed (since the only way we can get Apple's Combine on macOS 10.14 is using the simulator), or macOS 10.15 (Apple's Combine is bundled with the OS). Execute the following command from the root of the package:
 
