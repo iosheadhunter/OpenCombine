@@ -529,6 +529,7 @@
 		C081125125732F0500622BA0 /* FairPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FairPriorityQueue.swift; sourceTree = "<group>"; };
 		C081125225732F0500622BA0 /* CurrentValueSubjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectTests.swift; sourceTree = "<group>"; };
 		C081125325732F0500622BA0 /* PublishedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishedTests.swift; sourceTree = "<group>"; };
+		C0BC0380257A35CA00A219C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		OBJ_107 /* DispatchQueue+Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Scheduler.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* COpenCombineHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COpenCombineHelpers.h; sourceTree = "<group>"; };
 		OBJ_232 /* utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = utils; sourceTree = SOURCE_ROOT; };
@@ -979,6 +980,7 @@
 				OBJ_12 /* OpenCombine */,
 				OBJ_106 /* OpenCombineDispatch */,
 				OBJ_108 /* OpenCombineFoundation */,
+				C0BC0380257A35CA00A219C0 /* Info.plist */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -1466,6 +1468,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1476,7 +1479,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1494,6 +1499,7 @@
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++1z";
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1503,7 +1509,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1520,6 +1528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1530,7 +1539,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1549,6 +1560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1558,7 +1570,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1606,6 +1620,7 @@
 		OBJ_352 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1615,7 +1630,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1632,6 +1649,7 @@
 		OBJ_353 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -1640,7 +1658,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1658,6 +1678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1668,7 +1689,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1687,6 +1710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1696,7 +1720,9 @@
 					"$(inherited)",
 					"$(SRCROOT)/Sources/COpenCombineHelpers/include",
 				);
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MARKETING_VERSION = 0.11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
