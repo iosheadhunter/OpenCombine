@@ -1488,6 +1488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = COpenCombineHelpers;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = COpenCombineHelpers;
@@ -1518,6 +1519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = COpenCombineHelpers;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = COpenCombineHelpers;
@@ -1548,6 +1550,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCombine;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1579,6 +1582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCombine;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
@@ -1639,6 +1643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCombineDispatch;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
@@ -1667,6 +1672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCombineDispatch;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
@@ -1698,6 +1704,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCombineFoundation;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1729,6 +1736,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = OpenCombineFoundation;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
